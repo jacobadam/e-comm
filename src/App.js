@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <h1>JJacoba Games</h1>
+      <h1>Homepage</h1>
     </div>
   );
 }
