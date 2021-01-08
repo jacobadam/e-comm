@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {Switch, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import ProductList from "./Components/ProductList";
 import Details from "./Components/Details";
@@ -14,7 +14,7 @@ class App extends Component {
       <React.Fragment>
         <NavBar />
         <Switch>
-          <Route path="/" component={ProductList} />
+          <Route exact path="/" component={ProductList} />
           <Route path="/details" component={Details} />
           <Route path="/cart" component={Cart} />
           <Route  component={Error} />
