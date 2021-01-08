@@ -1,12 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class NavBar extends Component {
   render() {
-    return (
-      <div>
-        <h1>Hello from Nav</h1>
-      </div>
-    );
+    return <nav className="navbar navbar-expand-sm navbar-dark px-sm-5"></nav>;
   }
 }
 
